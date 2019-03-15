@@ -11,7 +11,7 @@ Example:
  
 * Добавить роут с наличием get и post запроса и привязать
 * контроллер -  'controller_name'
- $ROUTER('test', 'controller_name')->addRequest('GET&post');
+$ROUTER('test', 'controller_name')->addRequest('GET&post');
  
 * Добавить роут 'test' с наличием request запроса и привязать
 * контроллер -  'controllerTest'
