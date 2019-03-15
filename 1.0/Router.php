@@ -141,19 +141,16 @@ Class Router implements RouterMethods
     public
     function checkRout()
     {
-        global $config;
-
-        // TODO: Add filter isset request
 
         if (
             !empty($this->routes) &&
             is_array($this->routes) &&
             array_key_exists(
-                $config['url'][0],
+                $this->getUrl(0),
                 $this->routes)
         ) {
 
-            $rout = $this->routes[$config['url'][0]];
+            $rout = $this->routes[$this->getUrl(0)];
 
 
             if (!empty($rout['filter_request'])) {
