@@ -11,26 +11,40 @@ Example:
  
 * Добавить роут с наличием get и post запроса и привязать
 * контроллер -  'controller_name'
+```
 $ROUTER('test', 'controller_name')->addRequest('GET&post');
+```
  
 * Добавить роут 'test' с наличием request запроса и привязать
 * контроллер -  'controllerTest'
- $ROUTER('test', 'controllerTest')->addRequest('request');
+```
+$ROUTER('test', 'controllerTest')->addRequest('request');
+```
  
 * Добавить роут без проверки на наличие запроса и привязать
 * контроллер -  'url'
- $ROUTER('test', 'url');
+```
+$ROUTER('test', 'url');
+```
  
 * Получить 0-вой роут из url с delimiter /
- $ROUTER->getUrl(0);
+```
+$ROUTER->getUrl(0);
+```
  
 * Получить массив роутов
- $ROUTER->getUrl();
+```
+$ROUTER->getUrl();
+```
  
 * Проверить соответствует ли url[0] какому-либо из роутов
- $ROUTER->checkRout()
+```
+$ROUTER->checkRout()
+```
  
 * Получить контроллер если роут из url соответствует добавленным роутам
 * P.S: Запускать строго после checkRout()
- Router::getController()
+```
+Router::getController()
+```
 
